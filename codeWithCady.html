@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title of the document</title>
+</head>
+
+<body style="background-color:#19cce6">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.js"></script>
+
+    <h1>I love Cady!!!</h1>
+
+    <input id="userInput" placeholder="please type your name"/>
+    <button onclick="showMessage()">Go</button>
+    <output id="userMessage"></output>
+
+
+    <script>
+    
+        var showMessage = function(){
+
+            var name = $("#userInput").val();
+            console.log("function reached")
+
+
+            if(name.toLowerCase() == "cady" || name.toLowerCase() == "cadence"){
+                showOutput("Cady is the coolest!");
+            }
+
+            if(name.toLowerCase() == "dad" || name.toLowerCase() == "daddy" || name.toLowerCase() == "dadda" 
+             || name.toLowerCase() == "nick" || name.toLowerCase() == "nickolas"){
+                showOutput("Ewwww Daddy is a drooler!");
+            }
+
+            if(name.toLowerCase() == "lauren"){
+                showOutput("lauren is so stinky that it makes my nose hurt");
+            }
+
+            if(name.toLowerCase() == "ollie" || name.toLowerCase() == "oliver"){
+                showOutput("Ollie eats worms, GRRRRROOOOOOSSSS!!!!!!");
+            }
+
+            if(name.toLowerCase() == "sam" || name.toLowerCase() == "samantha"
+            || name.toLowerCase() == "mom"|| name.toLowerCase() == "mommy"
+            || name.toLowerCase() == "momma"){
+                showOutput("Sam Loves her oils!!!");
+            }
+
+            if(name.toLowerCase() == "brian"){
+                showOutput("Brian stinks, and kills bugs and eats them, gross!!");
+            }
+        };
+
+        var showOutput = function(message){
+            $("#userMessage").html(message)
+        }
+
+    </script>
+
+<script>
+
+
+
+
+</script>
+
+
+</body>
+
+</html>
